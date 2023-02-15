@@ -1,22 +1,22 @@
 {
-  "Versión" : " 2012-10-17 " ,
-  "Declaración" : [
+  "Version": "2012-10-17",
+  "Statement": [
     {
-      "Efecto" : " Permitir " ,
-      "Acción" : [
-        " registros: CreateLogGroup " ,
-        " registros: CreateLogStream " ,
-        " registros:PutLogEvents "
+      "Effect": "Allow", 
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
       ],
-      "Recurso" : " arn:aws:logs:*:*:* "
+      "Resource": "arn:aws:logs:*:*:*"
     },
     {
-      "Efecto" : " Permitir " ,
-      "Acción" : [
-        " ec2:Inicio* " ,
-        " ec2:Parar* "
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Start*",
+        "ec2:Stop*"
       ],
-      "Recurso" : " * "
+      "Resource": "*"
     }
   ]
 }
